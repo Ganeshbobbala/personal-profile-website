@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bobbala Ganesh - Aspiring Software Developer, Java Developer, and Full Stack Developer. Discover my background, technical skills, core strengths, and contact information.">
+  <title>Bobbala Ganesh | Personal Profile Website</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Ganesh<span>.</span></a>
+      
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-links">
+        <a href="#home" class="nav-item active">Home</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#profile" class="nav-item">Profile</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#interests" class="nav-item">Interests</a>
+        <a href="#contact" class="nav-item btn-nav">Contact Me</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light mode">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg class="sun-icon hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Navigation -->
+  <div class="mobile-nav">
+    <a href="#home" class="mobile-item">Home</a>
+    <a href="#about" class="mobile-item">About</a>
+    <a href="#profile" class="mobile-item">Profile</a>
+    <a href="#skills" class="mobile-item">Skills</a>
+    <a href="#interests" class="mobile-item">Interests</a>
+    <a href="#contact" class="mobile-item btn-mobile-nav">Contact Me</a>
+  </div>
+
+  <main>
+    <!-- 1. Home Section -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge">Welcome to my profile</div>
+          <h1 class="hero-title">Bobbala Ganesh</h1>
+          <h2 class="hero-subtitle">Aspiring Software Developer | Java Developer | Full Stack Developer</h2>
+          <p class="hero-intro">
+            Passionate and dedicated to building a strong foundation in Java, web development, and database management. Committed to continuous learning, problem-solving, and developing innovative software solutions that create real-world impact.
+          </p>
+          <div class="hero-actions">
+            <a href="#about" class="btn btn-primary">About Me</a>
+            <a href="#skills" class="btn btn-secondary">Skills</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <!-- Premium Developer SVG Illustration -->
+          <svg class="dev-illustration" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#2563eb" />
+                <stop offset="100%" stop-color="#1d4ed8" />
+              </linearGradient>
+              <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#eff6ff" />
+                <stop offset="100%" stop-color="#dbeafe" />
+              </linearGradient>
+              <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#6366f1" />
+                <stop offset="100%" stop-color="#4f46e5" />
+              </linearGradient>
+              <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+                <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#1e293b" flood-opacity="0.1" />
+              </filter>
+            </defs>
+
+            <!-- Background soft bubble -->
+            <circle cx="250" cy="250" r="180" fill="url(#bgGrad)" />
+            
+            <!-- Graphic Element: Decorative grid/dots -->
+            <g opacity="0.3">
+              <circle cx="100" cy="120" r="3" fill="#2563eb" />
+              <circle cx="120" cy="120" r="3" fill="#2563eb" />
+              <circle cx="140" cy="120" r="3" fill="#2563eb" />
+              <circle cx="100" cy="140" r="3" fill="#2563eb" />
+              <circle cx="120" cy="140" r="3" fill="#2563eb" />
+              <circle cx="140" cy="140" r="3" fill="#2563eb" />
+            </g>
+
+            <!-- Laptop Stand -->
+            <path d="M210 370 L290 370 L300 410 L200 410 Z" fill="#94a3b8" />
+            <path d="M170 410 H330 V415 C330 420 325 425 320 425 H180 C175 425 170 420 170 415 V410 Z" fill="#64748b" />
+            
+            <!-- Laptop Body / Screen -->
+            <rect x="110" y="160" width="280" height="210" rx="12" fill="#0f172a" filter="url(#shadow)" />
+            <!-- Inner screen -->
+            <rect x="122" y="172" width="256" height="186" rx="6" fill="#1e293b" />
+            
+            <!-- Code Lines Representation -->
+            <g class="code-lines">
+              <!-- Header Bar -->
+              <circle cx="137" cy="187" r="4" fill="#ef4444" />
+              <circle cx="149" cy="187" r="4" fill="#eab308" />
+              <circle cx="161" cy="187" r="4" fill="#22c55e" />
+              
+              <!-- Code Code -->
+              <!-- Line 1: class Developer { -->
+              <rect x="135" y="210" width="120" height="8" rx="4" fill="#f43f5e" opacity="0.8" />
+              <!-- Line 2:   public static void main(String[] args) { -->
+              <rect x="150" y="225" width="180" height="8" rx="4" fill="#3b82f6" opacity="0.8" />
+              <!-- Line 3:     System.out.println("Ganesh Bobbala"); -->
+              <rect x="165" y="240" width="160" height="8" rx="4" fill="#10b981" opacity="0.8" />
+              <!-- Line 4:     // Aspiring Full Stack Developer -->
+              <rect x="165" y="255" width="140" height="8" rx="4" fill="#64748b" opacity="0.8" />
+              <!-- Line 5:     Java.develop(); -->
+              <rect x="165" y="270" width="100" height="8" rx="4" fill="#eab308" opacity="0.8" />
+              <!-- Line 6:     Database.connect("MySQL"); -->
+              <rect x="165" y="285" width="130" height="8" rx="4" fill="#a855f7" opacity="0.8" />
+              <!-- Line 7:   } -->
+              <rect x="150" y="300" width="20" height="8" rx="4" fill="#3b82f6" opacity="0.8" />
+              <!-- Line 8: } -->
+              <rect x="135" y="315" width="20" height="8" rx="4" fill="#f43f5e" opacity="0.8" />
+            </g>
+
+            <!-- Floating Elements around screen -->
+            
+            <!-- Code Block tag < > -->
+            <g class="float-item float-item-1" filter="url(#shadow)">
+              <rect x="60" y="200" width="50" height="50" rx="12" fill="white" />
+              <path d="M72 220 L67 225 L72 230" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M78 220 L83 225 L78 230" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M77 218 L73 232" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+
+            <!-- Database Cylinder -->
+            <g class="float-item float-item-2" filter="url(#shadow)">
+              <rect x="380" y="230" width="50" height="50" rx="12" fill="white" />
+              <path d="M392 245 C392 242 405 242 405 242 C405 242 418 242 418 245 C418 248 405 248 405 248 C405 248 392 248 392 245 Z" fill="#6366f1" opacity="0.4" />
+              <path d="M392 245 V252 C392 255 405 255 405 255 C405 255 418 255 418 252 V245" stroke="#6366f1" stroke-width="2" />
+              <path d="M392 252 V259 C392 262 405 262 405 262 C405 262 418 262 418 259 V252" stroke="#6366f1" stroke-width="2" />
+              <path d="M392 245 C392 248 405 248 405 248 C405 248 418 248 418 245 C418 242 405 242 405 242 C405 242 392 242 392 245" stroke="#6366f1" stroke-width="2" />
+            </g>
+
+            <!-- Coffee Cup (Java) -->
+            <g class="float-item float-item-3" filter="url(#shadow)">
+              <rect x="340" y="90" width="50" height="50" rx="12" fill="white" />
+              <path d="M357 114 H373 C373 114 373 124 365 124 C357 124 357 114 357 114 Z" stroke="#eab308" stroke-width="2" fill="#fef08a" />
+              <path d="M373 117 C376 117 377 120 377 121 C377 122 376 123 373 123" stroke="#eab308" stroke-width="2" />
+              <path d="M361 106 C362 109 361 111 362 112" stroke="#eab308" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M365 105 C366 108 365 110 366 111" stroke="#eab308" stroke-width="1.5" stroke-linecap="round" />
+            </g>
+
+            <!-- Gear / Settings -->
+            <g class="float-item float-item-4" filter="url(#shadow)">
+              <rect x="110" y="80" width="50" height="50" rx="12" fill="white" />
+              <circle cx="135" cy="105" r="8" stroke="#10b981" stroke-width="2" />
+              <path d="M135 93 V97 M135 113 V117 M123 105 H127 M143 105 H147" stroke="#10b981" stroke-width="2" stroke-linecap="round" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Me Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">About Ganesh</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am a final-year Computer Science student from India and an <strong>aspiring Software Developer</strong> with a strong interest in software development and modern web technologies. Passionate about learning emerging technologies, I focus on building efficient, scalable, and user-friendly software solutions.
+            </p>
+            <p>
+              My journey into coding began with curiosity about how applications are designed and developed. Over time, this interest evolved into a strong foundation in Java, full-stack development, and database management. I enjoy creating responsive web applications, solving real-world problems, and continuously improving my technical skills through hands-on projects and practical learning.
+            </p>
+            <p>
+              I am committed to writing clean and maintainable code, and I aspire to contribute my technical knowledge, problem-solving abilities, and enthusiasm to collaborative software development projects.
+            </p>
+          </div>
+          
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+              </div>
+              <div class="highlight-info">
+                <h3>Final-Year Computer Science Student</h3>
+                <p>Building a strong academic and technical foundation in software engineering and application development.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <div class="highlight-info">
+                <h3>Aspiring Software Developer</h3>
+                <p>Focused on designing, developing, and implementing efficient software solutions.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+              </div>
+              <div class="highlight-info">
+                <h3>AI-Powered Applications</h3>
+                <p>Interested in integrating AI-driven features and modern APIs into web applications.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+              </div>
+              <div class="highlight-info">
+                <h3>Problem-Solving & Continuous Growth</h3>
+                <p>Committed to clean coding practices, logical thinking, and continuous technical improvement.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Personal Profile Section -->
+    <section id="profile" class="profile-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Details</span>
+          <h2 class="section-title">Personal Profile</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="profile-grid">
+          <div class="profile-card">
+            <div class="profile-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div class="profile-card-content">
+              <h3>Full Name</h3>
+              <p>Bobbala Ganesh</p>
+            </div>
+          </div>
+
+          <div class="profile-card">
+            <div class="profile-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <div class="profile-card-content">
+              <h3>Profession</h3>
+              <p>Aspiring Software Developer | Full-Stack Developer</p>
+            </div>
+          </div>
+
+          <div class="profile-card">
+            <div class="profile-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="profile-card-content">
+              <h3>Location</h3>
+              <p>India</p>
+            </div>
+          </div>
+
+          <div class="profile-card">
+            <div class="profile-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="profile-card-content">
+              <h3>Education</h3>
+              <p>B. Tech in Computer Science and Engineering</p>
+            </div>
+          </div>
+
+          <div class="profile-card span-2">
+            <div class="profile-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <div class="profile-card-content">
+              <h3>Career Goal</h3>
+              <p>To become a Software Engineer and build scalable, production-grade applications that solve real-world problems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Competencies</span>
+          <h2 class="section-title">My Skills</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon language-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="tool-badges">
+              <span class="badge-tag">Java</span>
+              <span class="badge-tag">JavaScript</span>
+              <span class="badge-tag">HTML</span>
+              <span class="badge-tag">CSS</span>
+            </div>
+          </div>
+
+          <!-- Technical Skills -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon tech-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <h3>Technical Skills</h3>
+            </div>
+            <div class="tool-badges">
+              <span class="badge-tag">Software Development</span>
+              <span class="badge-tag">Full Stack Development</span>
+              <span class="badge-tag">Frontend Development</span>
+              <span class="badge-tag">OOPs</span>
+              <span class="badge-tag">MySQL</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon tool-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <h3>Tools</h3>
+            </div>
+            <div class="tool-badges">
+              <span class="badge-tag">Git</span>
+              <span class="badge-tag">GitHub</span>
+              <span class="badge-tag">VS Code</span>
+            </div>
+          </div>
+
+          <!-- Core Strengths -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon strength-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <h3>Core Strengths</h3>
+            </div>
+            <ul class="strengths-list">
+              <li>
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Problem Solving
+              </li>
+              <li>
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Object-Oriented Programming (OOP)
+              </li>
+              <li>
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Data Structures & Algorithms
+              </li>
+              <li>
+                <svg class="check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Continuous Learning Mindset
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Interests Section -->
+    <section id="interests" class="interests-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Focus Areas</span>
+          <h2 class="section-title">Interests</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="interests-container">
+          <div class="interest-item">
+            <div class="interest-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <span>Software Engineer</span>
+          </div>
+
+          <div class="interest-item">
+            <div class="interest-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <span>Full Stack Developer</span>
+          </div>
+
+          <div class="interest-item">
+            <div class="interest-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 1.5.5 3 1.3 4.2L3 21l6.8-2.3c1.2.8 2.7 1.3 4.2 1.3a8 8 0 0 0 8-8 8 8 0 0 0-8-8z"/></svg>
+            </div>
+            <span>Artificial Intelligence</span>
+          </div>
+
+          <div class="interest-item">
+            <div class="interest-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <span>Learning Emerging Technologies</span>
+          </div>
+
+          <div class="interest-item">
+            <div class="interest-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span>Building Innovative Applications</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Contact Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Column -->
+          <div class="contact-info-container">
+            <h3 class="contact-subtitle">Get in Touch</h3>
+            <p class="contact-text">
+              Have an opportunity, a project idea, or just want to connect professionally? Feel free to reach out using the contact details or the form on this page!
+            </p>
+
+            <div class="contact-cards">
+              <!-- Email Card -->
+              <a href="mailto:ganeshbobbala479@gmail.com" class="contact-info-card">
+                <div class="contact-card-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="contact-card-text">
+                  <h4>Email</h4>
+                  <p>ganeshbobbala479@gmail.com</p>
+                </div>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/ganesh-bobbala-9a7a52327" target="_blank" rel="noopener noreferrer" class="contact-info-card">
+                <div class="contact-card-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </div>
+                <div class="contact-card-text">
+                  <h4>LinkedIn</h4>
+                  <p>Connect with me</p>
+                </div>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/Ganeshbobbala" target="_blank" rel="noopener noreferrer" class="contact-info-card">
+                <div class="contact-card-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </div>
+                <div class="contact-card-text">
+                  <h4>GitHub</h4>
+                  <p>View my source repositories</p>
+                </div>
+              </a>
+
+
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-container">
+            <h3 class="contact-subtitle">Send a Message</h3>
+            
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com">
+              </div>
+
+
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Hello Ganesh, I would like to discuss..."></textarea>
+              </div>
+
+              <button type="submit" id="submitBtn" class="btn btn-primary btn-submit">
+                <span>Send Message</span>
+                <span class="spinner hidden"></span>
+              </button>
+              
+              <!-- Success/Error alert box -->
+              <div id="formAlert" class="alert-box hidden"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#home" class="logo">Ganesh<span>.</span></a>
+        <p>Aspiring Full Stack Engineer from India</p>
+      </div>
+      <div class="footer-right">
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/ganesh-bobbala-9a7a52327" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/Ganeshbobbala" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="mailto:ganeshbobbala479@gmail.com" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+        <p class="copyright">&copy; 2026 Bobbala Ganesh | Personal Profile Website</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
